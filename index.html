@@ -7,8 +7,10 @@
 <meta name="description" content="Reasmory constructs explicit 3D spatial memory from multi-view images and videos, and constrains VLM interaction with it through a validated domain-specific language — improving spatial reasoning by 6–18 points over GPT-5-mini and Gemini-3-flash.">
 <link rel="icon" type="image/png" href="imgs/favicon.png">
 <meta property="og:title" content="Reasmory: 3D Reconstruction as Explicit Memory for VLMs Spatial Reasoning">
-<meta property="og:description" content="Spatial reasoning as structured program execution over reconstructed 3D memory.">
+<meta property="og:description" content="BMVC 2026. Spatial reasoning as structured program execution over reconstructed 3D memory.">
 <meta property="og:image" content="imgs/teaser.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 
 <style>
 :root {
@@ -81,6 +83,9 @@ code {
   max-width: 760px;
 }
 .hero .authors { color: var(--ink-soft); margin-bottom: 4px; }
+.hero .authors a { color: var(--green-dark); font-weight: 500; }
+.hero .authors a:not(:last-child)::after { content: " · "; color: var(--ink-soft); font-weight: 400; }
+.hero .affiliations { color: var(--ink-soft); font-size: .9rem; margin-bottom: 4px; }
 .hero .venue   { color: var(--ink-soft); font-size: .95rem; margin-bottom: 26px; }
 .btn-row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 10px; }
 .btn {
@@ -258,12 +263,18 @@ footer {
 <header class="hero wrap">
   <img class="logo" src="imgs/reasmory_logo.svg" alt="Reasmory — Reason, Remember, Reassemble">
   <h1>3D Reconstruction as Explicit Memory for VLMs Spatial Reasoning</h1>
-  <p class="authors">Anonymous Authors</p>
-  <p class="venue">BMVC 2026 Submission #75 &nbsp;·&nbsp; author list withheld for double-blind review</p>
+  <p class="authors">
+    <a href="https://kakituken.github.io/home/">Jixuan He</a>
+    <a href="https://research.nvidia.com/person/xueting-li">Xueting Li</a>
+    <a href="https://hubert0527.github.io/">Chieh Hubert Lin</a>
+    <a href="https://sail.ucmerced.edu/mhyang/">Ming-Hsuan Yang</a>
+  </p>
+  <p class="affiliations">Cornell Tech, Cornell University &nbsp;·&nbsp; NVIDIA &nbsp;·&nbsp; illoca AI &nbsp;·&nbsp; University of California, Merced</p>
+  <p class="venue"><a href="https://bmvc2026.bmva.org/"><strong>BMVC 2026</strong></a> &nbsp;·&nbsp; November 23–26, 2026 &nbsp;·&nbsp; Lancaster, UK</p>
   <div class="btn-row">
-    <a class="btn disabled" href="#">📄 Paper (soon)</a>
-    <a class="btn disabled" href="#">arXiv (soon)</a>
-    <a class="btn disabled" href="#">💻 Code (soon)</a>
+    <a class="btn alt" href="https://arxiv.org/pdf/2606.00963">📄 Paper</a>
+    <a class="btn alt" href="https://arxiv.org/abs/2606.00963">arXiv</a>
+    <a class="btn alt" href="https://github.com/KaKituken/Reasmory">💻 Code</a>
     <a class="btn alt" href="#viewer">🧊 Point-Cloud Demo</a>
     <a class="btn alt" href="#bibtex">📖 BibTeX</a>
   </div>
@@ -592,17 +603,16 @@ footer {
     <button id="copy-bib">Copy</button>
 <pre class="bibtex" id="bib-text">@inproceedings{reasmory2026,
   title     = {Reasmory: 3D Reconstruction as Explicit Memory for VLMs Spatial Reasoning},
-  author    = {Anonymous},
+  author    = {He, Jixuan and Li, Xueting and Lin, Chieh Hubert and Yang, Ming-Hsuan},
   booktitle = {British Machine Vision Conference (BMVC)},
-  year      = {2026},
-  note      = {Under review}
+  year      = {2026}
 }</pre>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    Reasmory · BMVC 2026 Submission #75 &nbsp;·&nbsp; Reason · Remember · Reassemble<br>
+    Reasmory · BMVC 2026 &nbsp;·&nbsp; Reason · Remember · Reassemble<br>
     Page design inspired by community project-page templates (e.g., Nerfies).
   </div>
 </footer>
